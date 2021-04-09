@@ -1,3 +1,5 @@
+import './Modal.scss';
+
 const Modal = () => {
   return (
     <div className="Overlay">

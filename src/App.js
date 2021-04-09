@@ -1,7 +1,6 @@
 import ImageGallery from './Components/ImageGallery/ImageGallery';
 import Modal from './Components/Modal';
 import { Component } from 'react';
-import axios from 'axios';
 
 // const baseUrl = 'https://pixabay.com/api/';
 // const apiKey = '20244739-961dea85be28be305e8bcd893';

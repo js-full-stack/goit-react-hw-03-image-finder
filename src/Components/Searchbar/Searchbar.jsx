@@ -23,7 +23,6 @@ class Searchbar extends Component {
           <button type="submit" className="SearchForm-button">
             <span className="SearchForm-button-label">Search</span>
           </button>
-
           <input
             onChange={this.handleChange}
             value={query}
@@ -33,6 +32,9 @@ class Searchbar extends Component {
             autoFocus
             placeholder="Search images and photos"
           />
+          <button type="submit" className="SearchForm-button">
+            <span className="SearchForm-button-label">Load more</span>
+          </button>
         </form>
       </header>
     );

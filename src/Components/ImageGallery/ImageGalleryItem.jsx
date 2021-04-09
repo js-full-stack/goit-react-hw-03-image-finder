@@ -1,7 +1,9 @@
-const ImageGalleryItem = () => {
+import './ImageGallery.scss';
+
+const ImageGalleryItem = ({ alt, id, miniImage }) => {
   return (
-    <li className="ImageGalleryItem">
-      <img src="" alt="" className="ImageGalleryItem-image" />
+    <li key={id} className="ImageGalleryItem">
+      <img src={miniImage} alt={alt} className="ImageGalleryItem-image" />
     </li>
   );
 };
