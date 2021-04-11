@@ -1,5 +1,6 @@
 import './Searchbar.scss';
 import { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class Searchbar extends Component {
   state = { query: '' };
@@ -40,5 +41,15 @@ class Searchbar extends Component {
     );
   }
 }
+
+Searchbar.defaultProps = {
+  handleChange: () => null,
+  handleSubmit: () => null,
+};
+
+Searchbar.propTypes = {
+  handleChange: PropTypes.func,
+  handleSubmit: PropTypes.func,
+};
 
 export default Searchbar;
